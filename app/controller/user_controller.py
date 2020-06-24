@@ -90,6 +90,6 @@ def delete(id):
         db.session.delete(user)
         db.session.commit()
 
-        return response.ok({ "id": id }, 'Successfully delete data!')
+        return response.ok("", 'Successfully delete data!')
     except Exception as e:
         print(e)
